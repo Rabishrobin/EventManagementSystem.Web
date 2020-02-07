@@ -160,7 +160,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Home\" />
     <Folder Include="Models\" />
+    <Folder Include="Signin\" />
+    <Folder Include="Signup\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

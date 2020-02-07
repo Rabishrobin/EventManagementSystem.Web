@@ -77,7 +77,7 @@
                 <td>
                     <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" required=""></asp:TextBox>
                     <asp:RequiredFieldValidator ID="reqConfirmPassword" ErrorMessage=" Please Re-Enter the password" ControlToValidate="txtConfirmPassword" runat="server" />
-                    <asp:CompareValidator ValueToCompare="txtPassword" ErrorMessage="Those password didn't match, Try again" ControlToValidate="reqConfirmPassword" runat="server" />
+                    <asp:CompareValidator ID="cvConfrimPassword" ErrorMessage="Those password didn't match, Try again" ControlToValidate="txtConfirmPassword" runat="server" ControlToCompare="txtPassword" />
                 </td>
             </tr>
             <tr>
@@ -90,7 +90,7 @@
     </div>
     <div>
         <label runat="server">Already registered User?</label>
-        <asp:HyperLink Text="Login" NavigateUrl="Login.aspx" runat="server" />
+        <asp:HyperLink Text="Sign in" NavigateUrl="Signin.aspx" runat="server" />
     </div>
 
 </asp:Content>
