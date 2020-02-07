@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.Master.cs" Inherits="OnlineEventManagementSystem.Website.Top" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <h2 style="text-align:center">Ashik Event Management</h2>
+    <title>Ashik Event Management</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server">
+            <table>
+                <tr>
+                    <asp:Button runat="server" Text="Sign Up" OnClick="SignupClick" />
+                    <asp:Button runat="server" Text="Sign In" OnClick="SigninClick" />
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Events
+            <ul>
+                <li>Wedding</li>
+                <li>Conference</li>
+                <li>Birthday</li>
+            </ul>
+                        </p>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
