@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="Signin.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Signin" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/Header.Master" AutoEventWireup="true" CodeBehind="Signin.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Signin" %>
 
 <asp:Content ID="head" runat="server" ContentPlaceHolderID="head">
     <h2>Sign In</h2>

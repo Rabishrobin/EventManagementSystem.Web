@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Header.Master" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Signup" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/Header.Master" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Signup" %>
 
 <asp:Content ID="head" runat="server" ContentPlaceHolderID="head">
     <h2 style="text-align: center">Sign Up</h2>
@@ -69,7 +69,7 @@
                 <td>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" required=""></asp:TextBox>
                     <asp:RequiredFieldValidator ID="reqPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="Please enter a password"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="revPassword" runat="server" ControlToValidate="txtPassword" ValidationExpression="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,10})$" ErrorMessage="Password must be more than 5 characters.it must contain atleast one numeral and one alphabet "></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="revPassword" runat="server" ControlToValidate="txtPassword" ValidationExpression="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})" ErrorMessage="Password must be more than 5 characters.it must contain atleast one numeral and one alphabet "></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -86,7 +86,7 @@
                 <asp:Button ID="buttonSubmit" runat="server" Text="Submit" OnClick="Submit" />
                 </td>
             </tr>
-        </table>
+        </table> 
     </div>
     <div>
         <label runat="server">Already registered User?</label>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -19,7 +15,19 @@ namespace OnlineEventManagementSystem.Website
 
         protected void Submit(object sender, EventArgs e)
         {
-            Response.Redirect("Signin.aspx");
+            
+            UserManager userManager = new UserManager();
+            userManager.userID = userManager.GenerateUserID(txtFirstName.Text, long.Parse(txtMobileNumber.Text));
+            userManager.userFirstName = txtFirstName.Text;
+            userManager.userLastName = txtLastName.Text;
+            userManager.userMailId = txtEmail.Text;
+            userManager.userMobileNumber = long.Parse(txtMobileNumber.Text);
+            userManager.userDOB = DateTime.Parse(txtDOB.Text).Date;
+            userManager.userGender = rbGender.Text;
+            UserRepository userRepository = new UserRepository();
+            UserRepository.InsertUser(userManager);
+            Response.Redirect("CustomerProfile.aspx");
         }
+        
     }
 } 
