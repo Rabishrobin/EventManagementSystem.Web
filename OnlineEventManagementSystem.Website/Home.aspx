@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Startup" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Home" %>
 
 <!DOCTYPE html>
 

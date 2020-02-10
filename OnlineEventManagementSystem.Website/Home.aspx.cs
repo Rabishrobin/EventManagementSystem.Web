@@ -7,11 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace OnlineEventManagementSystem.Website
 {
-    public partial class Startup : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UserRepository.RetriveMailId();
+            foreach (var cust in UserManager.CustomerMailId)
+            {
+                Response.Write(cust);
+            }
         }
 
         protected void SigninClick(object sender, EventArgs e)

@@ -10,7 +10,7 @@
 namespace OnlineEventManagementSystem.Website {
     
     
-    public partial class Startup {
+    public partial class Home {
         
         /// <summary>
         /// form1 control.

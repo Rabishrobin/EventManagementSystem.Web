@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OnlineEventManagementSystem
 {
 
     public  class UserManager
     {
-
+        public static List<string> CustomerMailId = new List<string>();
         public string userID { get; set; }
         public string userMailId { get; set; }
         public string userPassword { get; set; }
