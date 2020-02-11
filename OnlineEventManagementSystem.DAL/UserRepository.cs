@@ -3,32 +3,12 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 
-namespace OnlineEventManagementSystem
+namespace OnlineEventManagementSystem.DAL
 {
     public class UserRepository
     {
-        public static void GetConnection(out SqlConnection sqlConnection)
-        {
-            string DBConnection = ConfigurationManager.ConnectionStrings["EventManagement"].ConnectionString;
-            sqlConnection = new SqlConnection(DBConnection);
-        }
-        public static void RetriveMailId()
-        {
-            string DBConnection = ConfigurationManager.ConnectionStrings["EventManagement"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(DBConnection))
-            {
-                connection.Open();
-                string procedureString = "SP_Retrive_MailID";        
-                SqlCommand sqlCommand = new SqlCommand(procedureString, connection);
-                sqlCommand.CommandType = CommandType.StoredProcedure;
-                SqlDataReader sdr = sqlCommand.ExecuteReader();
-                while (sdr.Read())
-                {
-                    UserManager.CustomerMailId.Add((string)sdr["MailID"]);
-                }
-                sqlCommand.Dispose();
-            }
-        }
+        internal static string configurationString = ConfigurationManager.ConnectionStrings["EventManagement"].ConnectionString;
+        SqlConnection sqlConnection = new SqlConnection(configurationString);
         public static void InsertUser(UserManager userManager)
         {
             string DBConnection = ConfigurationManager.ConnectionStrings["EventManagement"].ConnectionString;

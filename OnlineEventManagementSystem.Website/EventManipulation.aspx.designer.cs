@@ -10,7 +10,7 @@
 namespace OnlineEventManagementSystem.Website {
     
     
-    public partial class AdminPage {
+    public partial class EventManipulation {
         
         /// <summary>
         /// form1 control.
@@ -22,12 +22,12 @@ namespace OnlineEventManagementSystem.Website {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// btnEvent control.
+        /// gvEvent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEvent;
+        protected global::System.Web.UI.WebControls.GridView gvEvent;
     }
 }

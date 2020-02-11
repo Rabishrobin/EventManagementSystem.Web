@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineEventManagementSystem.BL
+namespace OnlineEventManagementSystem.Entity
 {
-    public class Class1
+    class ServiceManager
     {
     }
 }

@@ -13,5 +13,10 @@ namespace OnlineEventManagementSystem.Website
         {
 
         }
+
+        protected void ManipulateEvent(object sender, EventArgs e)
+        {
+            Response.Redirect("EventManipulation.aspx");
+        }
     }
 }

@@ -11,11 +11,7 @@ namespace OnlineEventManagementSystem.Website
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            UserRepository.RetriveMailId();
-            foreach (var cust in UserManager.CustomerMailId)
-            {
-                Response.Write(cust);
-            }
+            
         }
 
         protected void SigninClick(object sender, EventArgs e)

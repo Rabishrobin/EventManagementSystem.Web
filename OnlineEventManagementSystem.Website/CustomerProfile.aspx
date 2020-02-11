@@ -10,7 +10,6 @@
     <form id="form1" runat="server">
     <div>
         <h2>Welcome</h2>
-        <asp:GridView runat="server" ID="EventDetails" OnSelectedIndexChanged="EventList">   </asp:GridView>
     </div>
     </form>
 </body>

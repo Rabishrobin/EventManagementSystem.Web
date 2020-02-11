@@ -12,21 +12,11 @@
             <h2 style="text-align:center">
                 Ashik Event Management
             </h2>
-            <div align="right">
+            <div>
                 <asp:Button ID="buttonLogin" runat="server" Text="Signin" OnClick="SigninClick" />
                 <asp:Button ID="buttonSignup" runat="server" Text="Signup" OnClick="SignupClick" />
             </div>
         </header>
-        <div>
-            <p>
-                Events
-            <ul>
-                <li>Wedding</li>
-                <li>Conference</li>
-                <li>Birthday</li>
-            </ul>   
-            </p>
-        </div>
     </form>
 </body>
 </html>
