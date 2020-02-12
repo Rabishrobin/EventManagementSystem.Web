@@ -95,7 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminPage.aspx" />
-    <Content Include="CSS\StyleSheet.css" />
+    <Content Include="CSS\theme.css" />
     <Content Include="CustomerProfile.aspx" />
     <Content Include="EventManipulation.aspx" />
     <Content Include="packages.config" />

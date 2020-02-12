@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OnlineEventManagementSystem.Website {
+namespace OnlineEventManagementSystem.Website.MasterPage {
     
     
-    public partial class Top {
+    public partial class Header {
         
         /// <summary>
         /// head control.
@@ -22,30 +22,21 @@ namespace OnlineEventManagementSystem.Website {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
         
         /// <summary>
-        /// form1 control.
+        /// OpenOn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm OpenOn;
         
         /// <summary>
-        /// MenuContentPlaceHolder control.
+        /// OpenOnPlaceHolder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MenuContentPlaceHolder;
-        
-        /// <summary>
-        /// ContentPlaceHolder control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder OpenOnPlaceHolder;
     }
 }

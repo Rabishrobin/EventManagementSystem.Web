@@ -23,5 +23,10 @@ namespace OnlineEventManagementSystem.Website
         {
             Response.Redirect("Signin.aspx");
         }
+
+        protected void HomeClick(object sender, EventArgs e)
+        {
+            Response.Redirect("Home.aspx");
+        }
     }
 }

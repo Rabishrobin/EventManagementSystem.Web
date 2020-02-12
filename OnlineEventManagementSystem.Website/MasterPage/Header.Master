@@ -1,40 +1,28 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.Master.cs" Inherits="OnlineEventManagementSystem.Website.Top" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.Master.cs" Inherits="OnlineEventManagementSystem.Website.MasterPage.Header" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <h2 style="text-align:center">Ashik Event Management</h2>
+    <link href="../CSS/theme.css" rel="stylesheet" type="text/css"/>
     <title>Ashik Event Management</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <asp:ContentPlaceHolder ID="MenuContentPlaceHolder" runat="server">
-            <table>
-                <tr>
-                    <asp:Button runat="server" Text="Sign Up" OnClick="SignupClick" />
-                    <asp:Button runat="server" Text="Sign In" OnClick="SigninClick" />
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            Events
-            <ul>
-                <li>Wedding</li>
-                <li>Conference</li>
-                <li>Birthday</li>
-            </ul>
-                        </p>
-                    </td>
-                    <td>
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </td>
-                </tr>
-            </table>
-        </asp:ContentPlaceHolder>
+    <form id="OpenOn" runat="server">
+        <div class="options">
+            <a class="title">Ashik Event Management</a>
+            <nav>
+                <asp:Button runat="server" Text="Home" OnClick="HomeClick" />
+            <asp:Button runat="server" Text="Sign Up" OnClick="SignupClick" />
+            <asp:Button runat="server" Text="Sign In" OnClick="SigninClick" />
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="OpenOnPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
 </body>
 </html>

@@ -1,11 +1,10 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage/Header.Master" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="OnlineEventManagementSystem.Website.Signup" %>
 
 <asp:Content ID="head" runat="server" ContentPlaceHolderID="head">
-    <h2 style="text-align: center">Sign Up</h2>
 </asp:Content>
 
-<asp:Content ID="ContentPlaceHolder" runat="server" ContentPlaceHolderID="ContentPlaceHolder">
-    <div>
+<asp:Content ID="ContentPlaceHolder" runat="server" ContentPlaceHolderID="OpenOnPlaceHolder">
+    <div class="playball">
         <table>
             <tr>
                 <td>
