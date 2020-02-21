@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineEventManagementSystem
+namespace OnlineEventManagementSystem.Entity
 {
 
     public  class UserManager

@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <header>
-            <h2 style="text-align:center">
+            <h2>
                 Ashik Event Management
             </h2>
             <div>
